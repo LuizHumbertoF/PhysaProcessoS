@@ -1,0 +1,3 @@
+# Comentário sobre o projeto
+
+O tabuleiro foi modelado utilizando dicionários para mapear as entradas e saídas das cobras e escadas, garantindo uma verificação de O(1) a cada nova casa acessada. A mecânica do jogo opera dentro de um laço de repetição contínuo "(while True)", gerenciando os turnos através de um índice alternante "(turn = 1 - turn)" sobre uma lista de posições. Essa estrutura base permitiu isolar a lógica de cada pergunta em funções independentes, facilitando a adição das regras específicas de cada cenário, como a validação condicional com "random.random()" para a falha nas escadas e iterações de força bruta para encontrar a melhor casa inicial.
